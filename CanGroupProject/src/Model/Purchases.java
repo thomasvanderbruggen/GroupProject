@@ -10,7 +10,8 @@ public class Purchases {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Column(name="id")
-	private int id; 
+	private int id;
+	// This is a test comment
 	@ManyToOne(cascade= CascadeType.PERSIST) 
 	@JoinColumn(name="can_id")
 	private Can can; 
